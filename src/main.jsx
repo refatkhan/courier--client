@@ -4,12 +4,15 @@ import './index.css'
 import { RouterProvider } from "react-router";
 import { router } from './routers/router.jsx';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+import AuthProvider from './contexts/AuthProvider.jsx';
 AOS.init();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <div className='font-urbanist max-w-7xl mx-auto'>
-      <RouterProvider router={router} />
-  </div>
+    <div className='font-urbanist max-w-7xl mx-auto'>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </div>
   </StrictMode>,
 )

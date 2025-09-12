@@ -4,6 +4,8 @@ import OurSection from '../Services/OurSection'
 import BrandSlider from '../BrandSlide/BrandSlider'
 import HowItWorks from '../works/HowItWorks'
 import FeaturesSection from '../Feature/FeaturesSection'
+import MarchentBanner from '../Marchent/MarchentBanner'
+import FAQSection from '../FaQ/FAQSection'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <OurSection></OurSection>
       <BrandSlider></BrandSlider>
       <FeaturesSection></FeaturesSection>
+      <MarchentBanner></MarchentBanner>
+      <FAQSection></FAQSection>
     </>
   )
 }
